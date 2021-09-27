@@ -14,7 +14,7 @@ export default function Stars({count}) {
 
     return(
         <ul className='card-body-stars'>
-            {stars.map((element) => <Star key={shortid.generate()} />)}
+            {stars.map((element) => <li key={shortid.generate()}><Star /></li>)}
         </ul>
     );
 }
